@@ -46,8 +46,6 @@ body {
 
 
 .topnav .active {
-    padding: auto;
-    font-size: auto;
     background-color: white;
     color: #EA5045;
 }
