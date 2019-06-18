@@ -1,0 +1,270 @@
+/* BODY STYLING */
+
+body {
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+
+@media screen and (max-width: 700px) .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 50px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-items: center;
+}
+
+
+header, footer {
+    grid-column: 1 / 4;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "main main main"
+        "footer footer footer";
+}
+
+
+
+
+input {
+    display: block;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 92%;
+    border: none;
+
+}
+
+
+h2 {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/*TOP NAVIGATION STYLING*/
+
+.topnav {
+
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav .float {
+    float: right;
+    background-color: white;
+    color: #EA5045;
+}
+
+.topnav .floatout {
+    float: right;
+    background-color: #EA5045;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.icons {
+    height: 250px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+}
+
+
+.topnav .active {
+    background-color: white;
+    color: #EA5045;
+}
+
+
+.library h1 {
+    padding: 10px;
+    margin: 50px;
+    background: #fcd659;
+    color: white;
+}
+
+
+.topnav .keaicon {
+    background-image: url(assets/kealogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 17px;
+    width: 70px;
+}
+
+
+
+/* LOGIN FORM */
+
+#loginform {
+    padding: 30px 0;
+}
+
+.hide {
+    display: none;
+}
+
+
+.btn {
+    background-color: #e1a6a0;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 60px;
+}
+
+.btn2 {background-color: #8ec1ac;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+#a-btn2 {
+    text-decoration: none;
+}
+
+/*background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn2:hover {
+    background-color: black;
+}
+
+/*button that is used to open and close the form*/
+
+.submit-btn {
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+    width: auto;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: .5em;
+    text-decoration: none;
+}
+
+
+
+
+/* form styling; hidden by default */
+
+.content {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #e1a6a0;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+section {
+    perspective: 1000px;
+    perspective-origin: top;
+}
+
+.show {
+    animation: open .65s forwards;
+    display: block;
+}
+
+@keyframes open {
+    50% {
+        transform: rotateX(30deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+
+.column {
+  float: left;
+  text-align: justify;
+  width: 33.33%;
+  padding: 25px;
+}
+
+.above {
+    background-color: lightpink;
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio_buttons {
+        padding: 10px;
+        margin: 50px;
+}
+
+.project-box h2 {
+    background: #e1a6a0;
+    padding: 10px;
+    color: white;
+}
+
+.project-box h4 {
+    background: black;
+    height: 40px;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.position {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  background-color: #e1a6a0;
+  color: white;
+  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.position h2 {
+    margin-top: 0;
+}
+
